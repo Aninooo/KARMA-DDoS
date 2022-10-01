@@ -30,7 +30,7 @@ def get_target(url):
     if ":" in urlparse(url).netloc:
         target['port'] = urlparse(url).netloc.split(":")[1]
     else:
-        target['port'] = "443" if urlparse(url).scheme == "https" else "80"
+        target['port'] = "444" if urlparse(url).scheme == "https" else "80"
         pass
     return target
 
